@@ -11,11 +11,11 @@ const downloadVideo = async (id, no, saveDir) => {
             ok: true
         }))
     } catch (err) {
-        console.log(`no.${no} download ERROR: ${err}`)
         return {
             id,
             no,
-            ok: false
+            ok: false,
+            err
         }
     }
 }
