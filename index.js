@@ -1,11 +1,9 @@
 const downloadVideo = require("./functions/downloadVideo")
+const info = require("./info.json")
 const wheel = ['/', '-', '\\', '|']
 const cap = 1, gap = 10
 
-/** For Modification */
-let startId = 40810, endId = 40820, startNo = 91
-let saveDir = "C:/Users/Leaf/Videos/Video/2021/try"
-/** Plz remember to edit this */
+const { startId, endId, startNo, saveDir } = info
 
 let record = []
 let progess = 0, goal = (endId - startId) / gap + 1
