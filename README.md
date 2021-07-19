@@ -1,10 +1,10 @@
 # LccDownloader
-A tool for downloading lccnet videos
-p.s. this is just 4 fun :D
+A tool for downloading lccnet videos 
+(this is just 4 fun :D)
 
 ## Setup
 
-Pleas add `info.json` under root directory once you cloned this repo with following information:
+Pleas add `info.json` with following information under root directory once you cloned this repo:
 
 ```
 {
