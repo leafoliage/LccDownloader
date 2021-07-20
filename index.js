@@ -26,7 +26,9 @@ const run = async () => {
     let sucess = record.filter(rec => rec.ok === true)
     let fail = record.filter(rec => rec.ok === false)
     console.log("\nSuccess:", sucess.length, "\nFail:", fail.length)
-    if (fail.length > 0) console.log(fail)
+    if (fail.length > 0) {
+        fail.forEach(video => console.log(video.id, video.no, video.err.message))
+    }
 }
 
 run()
